@@ -35,6 +35,29 @@ function mouseDown() {
 function mouseUp() {
     document.getElementById("myP").style.color = "green";
 }
+
+document.addEventListener("click", clicky);
+document.addEventListener("click", getSelectionText);
+
+function clicky () {
+  console.log("sup Denny")
+}
+function selectionFunction () {
+  var placeholder = document.getSelection.toString();
+  console.log(placeholder);
+}
+
+//stole this from http://stackoverflow.com/a/5379408/3175120
+//need to read up on logic
+function getSelectionText() {
+    var text = "";
+    if (window.getSelection) {
+        text = window.getSelection().toString();
+    } else if (document.selection && document.selection.type != "Control") {
+        text = document.selection.createRange().text;
+    }
+    console.log(text);
+}
 </script>
 
 </body>
