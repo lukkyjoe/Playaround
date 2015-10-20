@@ -1,2 +1,4 @@
 # Playaround
 not sure why readme should be in .md
+
+i'm modifying this at 9:37pm to push it back to github
